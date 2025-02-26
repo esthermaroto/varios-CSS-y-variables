@@ -1,0 +1,58 @@
+</head><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Login y Datos Personales</title>
+    <link rel="stylesheet" href="CSS/styles01.css" id="theme-style-1" rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="CSS/styles02.css" id="theme-style-2" disabled rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Inicio de Sesión</h1>
+        
+        <form id="loginForm">
+             <div class="form-group">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="botones">
+                <button id="theme-toggle">Cambiar Tema</button>
+                <button class="inicio">Login</button>
+            </div>
+                
+            
+             
+        </form>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeStyle1 = document.getElementById('theme-style-1');
+        const themeStyle2 = document.getElementById('theme-style-2');
+        let isAlternateTheme = false;
+    
+        themeToggle.addEventListener('click', () => {
+            isAlternateTheme = !isAlternateTheme;
+            if (isAlternateTheme) {
+                themeStyle1.disabled = true;
+                themeStyle2.disabled = false;
+            } else {
+                themeStyle1.disabled = false;
+                themeStyle2.disabled = true;
+            }
+        });
+        
+    </script>
+</body>
+</html>
