@@ -1,32 +1,45 @@
+:root {
+    --font-family: "Comfortaa", serif;
+    --bg-color: #e8f4f8;
+    --text-color: #333;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #808080;
+    --light-gray: #717171;
+    --red: red;
+    --shadow-color: rgba(252, 25, 25, 0.263);
+    --border-radius: 30px;
+    --padding: 16px;
+    --transition: 0.3s ease;
+}
+
 body {
-    font-family:  "Comfortaa", serif;;
-    background-color: #e8f4f8;
-    color: #333;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .container {
-    background-color: #ffffff;
-    border-radius: 0;
-    box-shadow: 0 4px 20px rgba(252, 25, 25, 0.263);
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px var(--shadow-color);
     max-width: 600px;
     margin: auto;
     margin-top: 100px;
     width: fit-content;
-   
-    border-radius: 30px;
 }
 
 h1 {
-    color: #ffffff;
+    color: var(--white);
     font-size: 2.8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     align-items: center;
-    background-color: red;
+    background-color: var(--red);
     padding: 30px;
     padding-top: 50px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
 }
 
 .form-group {
@@ -35,61 +48,54 @@ h1 {
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;    
-
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    padding-bottom: var(--padding);
 }
 
 label {
-    color: #000000;
+    color: var(--black);
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 input {
-    background-color: #ffffff;
+    background-color: var(--white);
     border: none;
-    border-bottom: 2px solid #808080;
+    border-bottom: 2px solid var(--gray);
     border-radius: 0;
-    color: #717171;
-    padding: 16px;
-    transition: border-color 0.3s ease;
-    
+    color: var(--light-gray);
+    padding: var(--padding);
+    transition: border-color var(--transition);
 }
 
 input:focus {
-    border-color: #000000;
+    border-color: var(--black);
     outline: none;
 }
 
 button {
-    background-color: #ffffff;
-    
+    background-color: var(--white);
     border-radius: 0;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 16px;
+    transition: background-color var(--transition), transform 0.2s ease;
+    margin-top: var(--padding);
     margin-left: 100px;
-    
 }
 
 button:hover {
-    background-color: #ffffff;
+    background-color: var(--white);
     transform: scale(1.05);
 }
 
-.botones{
-    
+.botones {
     padding-bottom: 20px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    background-color: red;
-    
-    display: flex;   
+    border-bottom-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    background-color: var(--red);
+    display: flex;
     margin-top: 20px;
-   
 }
