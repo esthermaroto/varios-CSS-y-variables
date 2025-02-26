@@ -89,11 +89,7 @@ button:hover {
     border-bottom-left-radius: 30px;
     background-color: red;
     
-
-    display: flex;
-    
-     /* Centra horizontalmente */
-    
+    display: flex;   
     margin-top: 20px;
    
 }
